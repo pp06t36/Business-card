@@ -9,8 +9,8 @@
     href="styles.css" />
     <title>Markham Webworks Digital Business Card</title>
 </head>
-<body>
-    <div class="card">
+<body id="body">
+    <div id="card">
         <img 
             src="images/Me.png" 
             alt="Our logo "
@@ -19,7 +19,20 @@
             <h3 class="name">Markham Webworks</h3>
             <p class="position">Frontend Developer & Designer</p>
             <h4 class="location">UK & South Korea</h4>
+            <button id="btn-1" onclick="toggleDarkMode()">Dark mode</button>
         </div>
     </div>
+   
+    <script>
+        // Define the toggleDarkMode function
+      function toggleDarkMode() {
+        var element1 = document.getElementById("body");
+        var element2 = document.getElementById("card");
+        var element3 = document.getElementById("btn-1");
+        element1.classList.toggle("dark-mode-body");
+        element2.classList.toggle("dark-mode-card");
+        element3.classList.toggle("dark-mode-btn");
+      }
+    </script>
 </body>
 </html>

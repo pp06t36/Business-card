@@ -1,4 +1,4 @@
-body {
+#body {
     margin: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -8,7 +8,7 @@ body {
     border-radius: 100%;
 }
 
-.card {
+#card {
     margin: 0 auto;
     display: flex;
     text-align: center;
@@ -18,8 +18,7 @@ body {
     background-color: #fb8500;
     color: #023047;
     border-bottom: 6px dotted #219ebc;
-    width: 480px;
-    
+    width: 480px;  
 }
 
 .border-black {
@@ -34,5 +33,41 @@ body {
 .position:hover,
 .location:hover  {
    color: #219ebc;
+}
+
+#btn-1 {
+    padding: 5px 10px;
+    border-radius: 25px;
+    background-color: #219ebc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    
+}
+
+#btn-1:hover {
+    background-color: #0e0f0f;
+    color: #ffffff;
+  }
+
+.dark-mode-body {
+    background-color: purple !important;
+    color: white !important;
+}
+
+.dark-mode-card {
+    background-color: black !important;
+    color: white !important;
+}
+
+.dark-mode-btn {
+    background-color: white !important;
+    color: black !important;
+}
+
+.dark-mode-btn:hover {
+    background-color: #fb8500 !important;
+    color: #ffffff !important;
   }
 
